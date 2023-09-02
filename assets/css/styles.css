@@ -40,6 +40,10 @@ img {
 .header-container > img {
     object-fit: contain;
     object-position: center;
+    animation-name: translateX, fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
 
 .header-content {
@@ -52,12 +56,31 @@ img {
     color: #232C50;
     font-size: 50px;
     font-weight: 700;
+
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
 
 .header-content > p {
     font-weight: 500;
     line-height: 26px;
     margin: 28px 0;
+
+    animation-name: fadeIn;
+    animation-delay: 200ms;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+.header-content > .btn {
+    animation-name: fadeIn;
+    animation-delay: 400ms;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
 
 /* Header Navigation */
@@ -334,6 +357,26 @@ input {
 
 .btn.shadow {
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes translateX {
+    0% {
+        transform: translateX(-2rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Media Querys */
