@@ -176,13 +176,99 @@ header .nav-link:active {
     display: flex;
     flex-direction: row;
     width: 300px;
-    justify-content:space-around;
-    wrap: nowrap;
-    
+    justify-content:space-around;    
 }
+
+.div-secondary-title {
+    text-align: center;
+}
+
+.secondary-title {
+    color: #242E53;
+    font-size: 39.21px;
+    font-weight: 700;
+    line-height: 61.41px;
+    letter-spacing: -1%;
+    height: 61px;
+    top: 1510px;
+    left: 553px;
+    margin-bottom: 40px;
+}
+
+.second-section-main {
+    width: 1335px;
+    height: 219px;
+    margin-top: 40px;
+    margin: auto;
+    display: flex;
+    background-color: #FAFAFA;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.card-player1 {
+    width: 445px;
+    height: 259px;
+    top: 1640px;
+    left: 71px;
+    text-align: center;
+
+}
+
+.card-player2 {
+    width: 445px;
+    height: 259px;
+    top: 1640px;
+    left: 71px;
+    text-align: center;
+
+}
+
+.card-player3 {
+    width: 445px;
+    height: 259px;
+    top: 1640px;
+    left: 71px;
+    text-align: center;
+
+}
+
+h3.name-player {
+    text-align: center;
+    justify-content: center;
+    width: 47px;
+    height: 25px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    size: 16.07px;
+    line-height: 25.17px;
+    letter-spacing: -1%;
+    align-items: center;
+}
+
+p.player-description {
+    width: 403px;
+    height: 100px;
+    font-weight: 500px;
+    size: 16px;
+    line-height: 25.06px;
+    align-items: center;
+    color: #B9B9C1;
+
+}
+
+
+
 
 .div-main-button {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 200px;
 }
 .main-button {
     min-width: 134px;
@@ -196,10 +282,14 @@ header .nav-link:active {
     text-decoration: none;
     border-radius: 50px;
     background-color: var(--bg-primary);
-    opacity: 0.7;
     border: none;
     cursor: pointer;
     
+}
+
+.main-button:hover {
+    opacity: 0.7;
+
 }
 
 section.bg-primary-responsive {
