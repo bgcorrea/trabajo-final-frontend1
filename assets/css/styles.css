@@ -292,23 +292,28 @@ p.player-description {
 }
 
 .section-container {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     color: var(--text-white);
-    align-items: center;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+.section-container > * {
+    flex: 1 0 0;
 }
 
 .section-container > h2 {
     font-size: 40px;
     font-weight: 700;
-    max-width: 500px;
+    max-width: 550px;
+    width: 100%;
 }
 
 .section-container > p {
     font-weight: 500;
     font-size: 16px;
-    max-width: 500px;
     line-height: 24px;
 }
 
@@ -525,7 +530,6 @@ input {
         margin-bottom: 21px;
     }
 
-
     .subtitle {
         background-color: #8B48BF4D;
         margin-left: -35px;
@@ -547,8 +551,7 @@ input {
     }
 
     .section-container > h2 {
-        margin-bottom: 50px;
-        text-align: center;
+        max-width: none;
     }
 
     /* Footer */
@@ -584,6 +587,10 @@ input {
     }
 
     /* Utilities */
+    .text-md-center {
+        text-align: center;
+    }
+
     .btn.btn-section {
         background-color: #232C50;
         color: var(--text-white);
