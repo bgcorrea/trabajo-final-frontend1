@@ -175,6 +175,7 @@ header .nav-link:active {
 .first-section-main {
     margin-top: 100px;
     margin-bottom: 200px;
+    width: 1133px;
     top: 985px;
     left: -1px;
     padding: 40px, 0px, 40px, 0px;
@@ -186,7 +187,15 @@ header .nav-link:active {
 }
 
 .first-section-main > * {
-    flex: 1 0 50%;
+    flex: 1 0 0;
+}
+
+.container-section-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Distribuye elementos en filas */
+    width: 553px;
+    height: 158px;
+    gap: 23px;
 }
 
 
@@ -204,7 +213,6 @@ header .nav-link:active {
 }
 
 .number {
-
     width: 19px;
     height: 23px;
     font-weight: 700;
@@ -214,11 +222,21 @@ header .nav-link:active {
     margin: auto;
 }
 
+.subtitle {
+    color: #323851;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23.38px;
+    letter-spacing: -1.5%;
+}
 
-
-
-
-
+.content {
+    color: #b3b2b7;
+    font-weight: 500;
+    font-size: 16.3px;
+    line-height: 25.52px;
+    letter-spacing: -1%;
+}
 
 
 
@@ -556,6 +574,11 @@ input {
     .btn.btn-section:hover {
         background-color: var(--text-white);
         color: var(--bg-primary);
+    }
+
+    .container-section-main {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
