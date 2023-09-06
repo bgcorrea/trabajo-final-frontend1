@@ -563,6 +563,22 @@ input {
         max-width: none;
     }
 
+    .second-section-main {
+        max-width: none;
+    }
+
+    .card-player {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-player:nth-child(2),
+    .card-player:nth-child(3) {
+        display: none;
+    }
+
+
+
     /* Footer */
     .footer-container {
         flex-direction: column-reverse;
