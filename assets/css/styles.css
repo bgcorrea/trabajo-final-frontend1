@@ -523,6 +523,12 @@ input {
     
     #hamburger {
         display: block;
+        transition: transform 0.5s;
+        cursor: pointer;
+    }
+
+    #hamburger:hover {
+        transform: rotate(180deg);
     }
 
     /* Main */
