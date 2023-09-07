@@ -5,7 +5,7 @@
     - section-container
     - notes-container
     - cards-container
-    - button playyers
+    - button players
 - **Jesus Mendoza**
     - Navbar
     - Header
