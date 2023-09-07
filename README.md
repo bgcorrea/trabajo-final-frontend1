@@ -2,10 +2,10 @@
 
 ## Integrantes
 - **Benjamin Correa**
-- section-container
-- notes-container
-- cards-container
-- button playyers
+    - section-container
+    - notes-container
+    - cards-container
+    - button playyers
 - **Jesus Mendoza**
     - Navbar
     - Header
