@@ -112,16 +112,81 @@
       <p>Join our community to connect with other athletes and enthusiasts worldwide!</p>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="container container-margin">
-      <h2 class="block-header">Contact</h2>
-      <form>
-        <input type="text" placeholder="Your name" />
-        <input type="email" placeholder="Your email" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="btn btn-primary btn-md">Send</button>
-      </form>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="container container-margin">
+    <style>
+      #contact {
+        padding: 4rem 1rem;
+      }
+
+      #contact h2,
+      #contact p {
+        text-align: center;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 2rem auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: #3a86ff;
+        box-shadow: 0 0 0 2px rgba(58, 134, 255, 0.2);
+      }
+
+      .form-group {
+        width: 100%;
+      }
+
+      .contact-form button {
+        align-self: center;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        background-color: #3a86ff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background-color: #265ecf;
+      }
+    </style>
+
+    <h2 class="block-header">Contact Us</h2>
+    <p>Have questions or want to work with us? Send us a message!</p>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your name" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your email" required class="form-control" />
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Write your message..." rows="5" required class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </section>
+
 
   </main>
 
